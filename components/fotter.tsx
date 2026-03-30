@@ -1,23 +1,33 @@
+import { Mail, Phone } from "lucide-react"
+import Image from "next/image"
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
-          <h2 className="text-white text-lg font-semibold mb-3">
-            Volare Tramontin
-          </h2>
-          <p className="text-sm">
-            Agência de viagens focada em experiências únicas e memoráveis.
-          </p>
-        </div>
+    <footer className="w-full bg-gray-900 text-gray-300 p-4 sm:p-[2vw]">
+      <div className="flex flex-col sm:flex-row w-full justify-center items-center mb-2 sm:mb-[2vw] gap-2 sm:gap-[6vw]">
+        <Image
+                   src="/logo.png"
+                   alt="Logo"
+                   width={200}
+                   height={200}
+                   className="object-contain hidden sm:flex"
+                 />
+     
 
-        <div>
-          <h3 className="text-white font-medium mb-3">Contato</h3>
-          <ul className="space-y-2 text-sm">
-            <li>Email: contato@volare.com</li>
-            <li>Telefone: (48) 99999-9999</li>
-            <li>Criciúma - SC</li>
-          </ul>
+        <div className="flex flex-col">
+          <h3 className="text-white font-bold text-2xl mb-3">Contato</h3>
+             <div className="space-y-2 text-sm">
+            <div className="flex gap-2 sm:flex-[1vw] items-center">
+              <Phone/>
+              <p className="font-medium">(48) 99942-2691</p>
+            </div>
+          </div>
+             <div className="space-y-2 text-sm">
+            <div className="flex gap-2 sm:flex-[1vw] items-center">
+              <Mail/>
+              <p className="font-medium">contato@volare.com</p>
+            </div>
+          </div>  
         </div>
       </div>
 
