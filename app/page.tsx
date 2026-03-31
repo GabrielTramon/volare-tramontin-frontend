@@ -1,8 +1,18 @@
-import Footer from "@/components/fotter";
-import { GridBenefit } from "@/components/gridBenefit";
+import { ContactPage } from "@/components/contact/contactPage";
+import Footer from "@/components/footer";
+import { GridBenefit } from "@/components/gridBenefit/gridBenefit";
 import NavBar from "@/components/navBar";
-import { Globe, Plane, Shield } from "lucide-react";
+import {
+  Contact,
+  Globe,
+  Mail,
+  MessageCircle,
+  Plane,
+  Shield,
+} from "lucide-react";
 import Image from "next/image";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 export default function Home() {
   const benefits = [
@@ -27,8 +37,25 @@ export default function Home() {
       icon: <Plane />,
     },
   ];
+  const contacts = [
+    {
+      title: "Email",
+      description: "Planejamento ágil e eficiente",
+      icon: <MdEmail size={80} />,
+    },
+    {
+      title: "WhatsApp",
+      description: "Explore o mundo inteiro",
+      icon: <BsWhatsapp size={80} />,
+    },
+    {
+      title: "Instagram",
+      description: "Suporte completo na viagem",
+      icon: <BsInstagram size={80} />,
+    },
+  ];
   return (
-    <div className="justify-center w-full gap-y-8 sm:gap-y-[2vw] flex flex-col items-center mb-4 sm:mb-[2vw]">
+    <div className="justify-center w-full flex flex-col items-center">
       <Image
         src="/banner.png"
         alt="Logo"
@@ -38,6 +65,8 @@ export default function Home() {
       />
 
       <GridBenefit items={benefits} />
+
+      <ContactPage items={contacts} />
     </div>
   );
 }
