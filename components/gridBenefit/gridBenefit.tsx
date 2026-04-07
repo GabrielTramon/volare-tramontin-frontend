@@ -8,12 +8,12 @@ type Benefit = {
 
 export function GridBenefit({ items }: { items: Benefit[] }) {
   return (
-    <div className="flex flex-col bg-gray-50 shadow-md border-gray-100 w-full p-8 sm:p-[4vw] justify-center items-center gap-y-4 sm:gap-y-[4vw]">
-      <div className="flex flex-col gap-y-2 sm:gap-y-[1vw] justify-center items-center">
-        <h1 className="font-semibold text-lg sm:text-2xl text-center">
-          Por que nos escolher{" "}
+    <div className="flex flex-col bg-blue-900 shadow-md border-gray-100 w-full p-8 sm:p-[3vw] justify-center items-center gap-y-4 sm:gap-y-[4vw]">
+      <div className="flex flex-col gap-y-2 sm:gap-y-[0.5vw] justify-center items-center">
+        <h1 className="font-semibold text-lg sm:text-2xl text-center text-white">
+          Por que nos escolher?
         </h1>
-        <h1 className="font-semibold text-2xl sm:text-6xl text-center">
+        <h1 className="font-semibold text-2xl sm:text-6xl text-center text-white">
           Viaje com quem entende{" "}
         </h1>
       </div>

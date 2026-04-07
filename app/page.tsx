@@ -59,8 +59,9 @@ export default function Home() {
       <Image
         src="/banner.png"
         alt="Logo"
-        width={1500}
-        height={1500}
+        width={2000}
+        height={2000}
+        unoptimized
         className="w-full h-auto object-contain"
       />
 

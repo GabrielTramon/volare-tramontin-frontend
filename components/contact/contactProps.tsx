@@ -6,14 +6,16 @@ type GridBenefitProps = {
 
 export function ContactProps({ title, description, icon }: GridBenefitProps) {
   return (
-    <div className="  flex flex-col items-center text-center gap-3 transition-all duration-300">
-      <div className="text-blue-500 transition-transform duration-300 hover:scale-110">
+    <div className="group cursor-pointer flex flex-col items-center text-center gap-4 p-6 rounded-2xl bg-white shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+      <div className="flex items-center justify-center w-14 h-14 rounded-full bg-blue-50 text-blue-500 group-hover:scale-110 transition-transform duration-300">
         {icon}
       </div>
       <h3 className="text-lg sm:text-xl font-semibold text-gray-800">
         {title}
       </h3>
-      <p className="text-sm sm:text-base text-gray-500">{description}</p>
+      <p className="text-sm sm:text-base text-gray-500 leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 }
