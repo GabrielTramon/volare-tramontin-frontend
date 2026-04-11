@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-900 text-gray-300 p-4 sm:p-[2vw]">
+    <footer className="w-full bg-blue-900 text-gray-300 p-4 sm:p-[2vw]">
       <div className="flex flex-col sm:flex-row w-full justify-center items-center mb-2 sm:mb-[2vw] gap-2 sm:gap-[6vw]">
         <Image
-          src="/logo.png"
+          src="/whitelogo.png"
           alt="Logo"
           width={200}
           height={200}
