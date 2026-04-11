@@ -13,11 +13,9 @@ export default function NavBar() {
             className="object-contain"
           />
           <div className="sm:flex font-bold text-gray-700 gap-4 sm:gap-[1vw] hidden">
-            <h2 className="cursor-pointer hover:text-blue-700">Home</h2>
-            <h2 className="cursor-pointer hover:text-blue-700">About</h2>
-            <h2 className="cursor-pointer hover:text-blue-700">Contact</h2>
+            <h2 className="cursor-pointer hover:text-blue-700">Entre Em Contato</h2>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
   );
