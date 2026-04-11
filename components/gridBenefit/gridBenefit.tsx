@@ -1,0 +1,27 @@
+import { GridBenefitItem } from "./gridBenefitItem";
+
+type Benefit = {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+};
+
+export function GridBenefit({ items }: { items: Benefit[] }) {
+  return (
+    <div className="flex flex-col bg-blue-900 shadow-md border-gray-100 w-full p-8 sm:p-[3vw] justify-center items-center gap-y-4 sm:gap-y-[4vw]">
+      <div className="flex flex-col gap-y-2 sm:gap-y-[0.5vw] justify-center items-center">
+        <h1 className="font-semibold text-lg sm:text-2xl text-center text-white">
+          Por que nos escolher?
+        </h1>
+        <h1 className="font-semibold text-2xl sm:text-6xl text-center text-white">
+          Viaje com quem entende{" "}
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-4 w-full justify-center items-center gap-4 sm:gap-[2vw]">
+        {items.map((item, index) => (
+          <GridBenefitItem key={index} {...item} />
+        ))}
+      </div>
+    </div>
+  );
+}
