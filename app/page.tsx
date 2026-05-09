@@ -42,22 +42,25 @@ export default function Home() {
       title: "Email",
       description: "Planejamento ágil e eficiente",
       icon: <MdEmail size={80} />,
+      href: `mailto:${process.env.NEXT_PUBLIC_SOCIAL_EMAIL}`,
     },
     {
       title: "WhatsApp",
       description: "Explore o mundo inteiro",
       icon: <BsWhatsapp size={80} />,
+      href: `https://wa.me/${process.env.NEXT_PUBLIC_SOCIAL_WHATSAPP}`,
     },
     {
       title: "Instagram",
       description: "Suporte completo na viagem",
       icon: <BsInstagram size={80} />,
+      href: `https://www.instagram.com/${process.env.NEXT_PUBLIC_SOCIAL_INSTAGRAM}`,
     },
   ];
   return (
     <div className="justify-center w-full flex flex-col items-center">
       <Image
-        src="/banner.png"
+        src="/banner.webp"
         alt="Logo"
         width={2000}
         height={2000}

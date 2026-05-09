@@ -4,6 +4,7 @@ type Benefit = {
   title: string;
   description: string;
   icon: React.ReactNode;
+  href?: string;
 };
 
 export function ContactPage({ items }: { items: Benefit[] }) {
